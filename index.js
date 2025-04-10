@@ -55,8 +55,6 @@ app.delete('/users/:id', checkUserId, (request, response) => {
     users.splice(index,1)
 
     return response.status(204).json()
-
 })
-
 
 app.listen(3000)
